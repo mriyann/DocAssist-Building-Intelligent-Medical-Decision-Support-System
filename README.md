@@ -106,7 +106,7 @@ Description of design choices and Performance evaluation of the model
 
 
 Model Interpretability Report
-	Imported Joblib for the development of the User Interface.
+	Imported Pickle for the development of the User Interface.
 
 	Designed a Business Intelligence (BI) User Interface that is user-friendly and efficient. The interface allows users to input health parameters, and the model predicts whether treatment is needed for the patient based on the factors trained in the machine learning model.
 
