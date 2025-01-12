@@ -90,19 +90,26 @@ Treatment Recommendation Algorithm
 	Validated the correlation between the features and the Output column, visualizing it using a heatmap.
 
 
-Description of design choices and Performance evaluation of the model
-	Imported the KNN Classifier algorithm and set the following parameters:
-•	Nearest neighbours: 5
-•	Metric: Manhattan
-•	Weights: Distance
-•	Leaf size: 50
-•	n_jobs: None
+Description of design choices 
+	Implemented Random Forest, Logistic Regression and SVM models and found as the highest accuracy achieved is by Random Forest model
+
+	To Maximize data usage and reduce overfitting cross validation has been performed on the dataset
+
+	Grid Search has been performed as to validate the most accurate and sufficient Machine learning Model and hyperparameters for better model performance
+
+Performance evaluation of the model
+	Imported the Random Forest Classifier algorithm and set the following parameters:
+•	creterion: entropy
+•	max_depth: 10
+•	min_samples_leaf: 1
+•	min_samples_split: 2
+•	n_estimator: 100
 
 	Fit the data into the model and made predictions on the dataset.
 
-	Imported the Accuracy Score, Confusion Matrix, and Classification Report to evaluate the model's accuracy and performance.
+	Imported the Accuracy Score, Confusion Matrix, f1_score, recall_score, precision_score and Classification Report to evaluate the model's performance.
 
-	Achieved an Accuracy Score of 75.62% after tuning the hyperparameters.
+	Achieved an Accuracy Score of 78% and F1 Score of 83% after tuning the hyperparameters.
 
 
 Model Interpretability Report
@@ -129,7 +136,7 @@ End User usage:
 
 
 Success Metrics
-	After tuning the hyperparameters and evaluating various machine learning models, the highest accuracy was achieved using the KNN Classifier.
+	After tuning the hyperparameters and evaluating various machine learning models, the highest accuracy was achieved using the Random Forest Classifier.
 
 	The model can be effectively utilized by regional doctors to analyze patient conditions by updating relevant parameters, offering a time-saving and efficient solution, particularly beneficial for intern doctors in the absence of more experienced physicians.
 
